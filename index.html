@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="page-container">
+        <div class="container">
+            <h1 data-translate="title">Guessing Game</h1>
+            <button class="startButton" data-translate="startButton">Start Game</button>
+            <div class="gameArea">
+                <p data-translate="instructions">You have 10 trials to guess the number between 1 and 100.</p>
+                <input type="number" class="userGuess" placeholder="Enter your guess">
+                <button class="submitGuess" data-translate="submitGuess">Submit Guess</button>
+                <p class="resultMessage"></p>
+                <p class="trialsLeft">Trials left: <span>10</span></p>
+            </div>
+            <select class="languageSelect">
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+            </select>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
